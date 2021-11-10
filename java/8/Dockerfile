@@ -1,6 +1,6 @@
 FROM        openjdk:8-slim
 
-LABEL       author="zGumeloBr"
+LABEL       author="zGumeloBrA"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
