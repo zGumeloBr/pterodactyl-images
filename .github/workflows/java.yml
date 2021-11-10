@@ -1,4 +1,4 @@
-name: build java
+name: Java
 
 on:
   workflow_dispatch:
