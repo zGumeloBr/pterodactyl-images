@@ -40,4 +40,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/zGumeloBr/pterodactyl:java_${{ matrix.tag }}
+            ghcr.io/zgumelobr/pterodactyl:java_${{ matrix.tag }}
