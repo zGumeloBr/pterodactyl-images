@@ -9,13 +9,6 @@ RUN         apk add --update --no-cache ca-certificates curl wget ffmpeg git ope
                 && wget https://github.com/minekube/gate/archive/refs/heads/master.zip \
                 && unzip master.zip
 
-COPY go.mod go.mod
-COPY go.sum go.sum
-COPY cmd cmd/
-COPY pkg pkg/
-COPY gate.go ./
-COPY entrypoint.sh ./
-
-RUN go build -a -o gate gate.go
+COPY ./../entrypoint.sh /entrypoint.sh
 
 CMD ["/bin/ash", "/entrypoint.sh"]
