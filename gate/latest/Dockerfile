@@ -11,7 +11,6 @@ COPY go.sum go.sum
 COPY ./cmd /cmd
 COPY ./pkg /pkg
 COPY ./gate.go /gate.go
-COPY ./config.yml /config.yml
 COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR     /home/container
