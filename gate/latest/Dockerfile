@@ -2,9 +2,9 @@ FROM golang:1.17-buster
 
 LABEL author="zGumeloBr"
 
-RUN     apt update -y \
-	&& apt install -y ca-certificates curl wget ffmpeg git openssl sqlite unzip tar tzdata \
-	&& adduser --disabled-password --home /home/container container
+RUN     apt-get update -y \
+	&& apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libstdc++6 \
+	&& useradd -d /home/container -m container
 	
 USER        container
 ENV         USER=container HOME=/home/container
@@ -12,4 +12,4 @@ WORKDIR     /home/container
 
 COPY ./../entrypoint.sh /entrypoint.sh
 
-CMD ["/bin/ash", "/entrypoint.sh"]
+CMD ["/bin/bash", "/entrypoint.sh"]
