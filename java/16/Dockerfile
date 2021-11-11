@@ -3,7 +3,7 @@ FROM        openjdk:16-slim
 LABEL       author="zGumeloBr"
 
 RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
+ && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libstdc++6 \
  && useradd -d /home/container -m container
  
 USER        container
