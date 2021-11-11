@@ -1,4 +1,4 @@
-FROM --platform=$TARGETOS/$TARGETARCH golang:1.15-slim
+FROM golang:1.17-buster
 
 LABEL author="zGumeloBr"
 
