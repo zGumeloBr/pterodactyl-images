@@ -1,4 +1,4 @@
-name: build gate
+name: build binary
 
 on:
   workflow_dispatch:
@@ -8,11 +8,11 @@ on:
     branches:
       - main
     paths:
-      - go/**
+      - binary/**
       
 jobs:
   push:
-    name: "pterodactyl:gate_${{ matrix.tag }}"
+    name: "pterodactyl:binary_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -32,9 +32,9 @@ jobs:
           password: ${{ secrets.REGISTRY_TOKEN }}
       - uses: docker/build-push-action@v2
         with:
-          context: ./gate
-          file: ./gate/${{ matrix.tag }}/Dockerfile
+          context: ./binary
+          file: ./binary/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/zgumelobr/pterodactyl:gate_${{ matrix.tag }}
+            ghcr.io/zgumelobr/pterodactyl:binary_${{ matrix.tag }}
