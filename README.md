@@ -1,4 +1,4 @@
-# 🦖 | Pterodactyl Eggs
+# 🦖 | Pterodactyl Docker Images
 
 🇧🇷 | Repositorio possuindo as docker images necessárias para o programa da eggs do painel pterodactyl.
 
