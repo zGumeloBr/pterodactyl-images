@@ -4,7 +4,7 @@
 
 🇺🇸 | Repository having the necessary docker images for the eggs program of the pterodactyl panel.
 
-# ☕️ | OpenJDK
+# ☕️ | Java (OpenJDK)
 
 Java 7: ```ghcr.io/zgumelobr/pterodactyl:java_7```
 
