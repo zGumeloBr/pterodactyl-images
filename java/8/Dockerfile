@@ -1,4 +1,4 @@
-FROM        openjdk:8-slim
+FROM       azul/zulu-openjdk-debian:8-latest
 
 LABEL       author="zGumeloBr"
 
