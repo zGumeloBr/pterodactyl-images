@@ -1,4 +1,4 @@
-FROM        openjdk:7-slim
+FROM        azul/zulu-openjdk-debian:7
 
 LABEL       author="zGumeloBr"
 
