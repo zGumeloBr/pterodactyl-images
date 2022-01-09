@@ -8,6 +8,7 @@ RUN apt-get update -y \
  
 USER        container
 ENV         USER=container HOME=/home/container
+ENV         LANG en_US.UTF-8
 
 WORKDIR     /home/container
 
