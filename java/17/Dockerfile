@@ -1,5 +1,4 @@
-FROM        openjdk:17-slim
-
+FROM        azul/zulu-openjdk-debian:17
 LABEL       author="zGumeloBr"
 
 RUN apt-get update -y \
