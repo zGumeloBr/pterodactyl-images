@@ -12,11 +12,11 @@ Java 8: ```ghcr.io/zgumelobr/pterodactyl:java_8```
 
 Java 11: ```ghcr.io/zgumelobr/pterodactyl:java_11```
 
+Java 15: ```ghcr.io/zgumelobr/pterodactyl:java_15```
+
 Java 16: ```ghcr.io/zgumelobr/pterodactyl:java_16```
 
 Java 17: ```ghcr.io/zgumelobr/pterodactyl:java_17```
-
-Java 18: ```ghcr.io/zgumelobr/pterodactyl:java_18```
 
 # 📁 | Contact
 
