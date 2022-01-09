@@ -1,4 +1,4 @@
-FROM        openjdk:16-slim
+FROM        azul/zulu-openjdk-debian:16
 
 LABEL       author="zGumeloBr"
 
