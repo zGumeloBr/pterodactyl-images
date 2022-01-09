@@ -13,7 +13,7 @@ on:
 jobs:
   push:
     name: "pterodactyl:java_${{ matrix.tag }}"
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
