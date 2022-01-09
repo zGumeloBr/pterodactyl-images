@@ -4,6 +4,7 @@ LABEL       author="zGumeloBr"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
+ && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen \
  && useradd -d /home/container -m container
  
 USER        container
