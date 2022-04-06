@@ -1,4 +1,4 @@
-FROM        azul/prime-debian:16
+FROM        azul/prime-debian:17
 
 LABEL       author="zGumeloBr"
 
