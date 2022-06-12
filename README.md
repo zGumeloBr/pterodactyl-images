@@ -16,6 +16,8 @@ Java 16: ```ghcr.io/zgumelobr/pterodactyl:java_16```
 
 Java 17: ```ghcr.io/zgumelobr/pterodactyl:java_17```
 
+Java 18: ```ghcr.io/zgumelobr/pterodactyl:java_18```
+
 # 📁 | Contact
 
 ```Discord: zGumeloBr#8726```
