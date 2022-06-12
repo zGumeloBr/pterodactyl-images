@@ -1,5 +1,8 @@
 FROM        azul/zulu-openjdk-debian:17
-LABEL       author="zGumeloBr"
+LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
+
+LABEL       org.opencontainers.image.source="https://github.com/zGumeloBr/pterodactyl-images"
+LABEL       org.opencontainers.image.licenses=MIT
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
