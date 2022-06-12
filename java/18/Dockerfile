@@ -1,4 +1,5 @@
 FROM        azul/zulu-openjdk-debian:18
+
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
 
 LABEL       org.opencontainers.image.source="https://github.com/zGumeloBr/pterodactyl-images"
