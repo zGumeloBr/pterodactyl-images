@@ -5,7 +5,8 @@ LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
 LABEL       org.opencontainers.image.source="https://github.com/zGumeloBr/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN         apk add --update --no-cache curl ca-certificates openssl git tar sqlite fontconfig freetype tzdata iproute2 libstdc++6 && adduser -D -h /home/container container
+RUN         apk add --update --no-cache curl ca-certificates openssl git tar sqlite fontconfig freetype tzdata iproute2 libstdc++6
+RUN         adduser -D -h /home/container container
  
 USER        container
 ENV         USER=container HOME=/home/container
