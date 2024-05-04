@@ -2,8 +2,6 @@
 
 Repositorio possuindo as docker images necessárias para o programa da eggs do painel pterodactyl.
 
-Test
-
 # ☕️ | Java (Zulu)
 
 Java 7: ```ghcr.io/zgumelobr/pterodactyl:java_7```
