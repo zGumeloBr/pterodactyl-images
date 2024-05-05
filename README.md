@@ -8,13 +8,13 @@ Listed below are all the docker images supported by the repository.
 
 #### DragonflyDB
 
-| Version | Image |
+| Version | Image ||
 | ------ | ------ | ------ |
 | Latest | ```ghcr.io/zgumelobr/pterodactyl:dragonflydb_latest``` | ✅ |
 
 #### Zulu JDK
 
-| Version | Image |
+| Version | Image || 
 | ------ | ------ | ------ |
 | 8 | ```ghcr.io/zgumelobr/pterodactyl:java_8``` | ✅ |
 | 11 | ```ghcr.io/zgumelobr/pterodactyl:java_11``` | ✅ |
@@ -25,7 +25,7 @@ Listed below are all the docker images supported by the repository.
 
 #### GraalVM
 
-| Version | Image |
+| Version | Image ||
 | ------ | ------ | ------ |
 | 8 | ```ghcr.io/zgumelobr/pterodactyl:java_graalvm_8``` | ✅ |
 | 11 | ```ghcr.io/zgumelobr/pterodactyl:java_graalvm_11``` | ✅ |
@@ -36,7 +36,7 @@ Listed below are all the docker images supported by the repository.
 
 (Obs: Binary image focused to run Binary archives in pterodactyl) 
 
-| System | Image |
+| System | Image ||
 | ------ | ------ | ------ |
 | Debian | ```ghcr.io/zgumelobr/pterodactyl:binary``` | ✅ |
 
