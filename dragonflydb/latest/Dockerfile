@@ -5,6 +5,10 @@ LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
 LABEL       org.opencontainers.image.source="https://github.com/zGumeloBr/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
+RUN         ln -sf /bin/bash /bin/sh
+    
+RUN         apt -y install iproute2
+
 RUN         useradd -m -d /home/container -s /bin/bash container
 
 USER        container
