@@ -1,4 +1,4 @@
-FROM        debian:buster-slim
+FROM        ubuntu:22.04
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
 
