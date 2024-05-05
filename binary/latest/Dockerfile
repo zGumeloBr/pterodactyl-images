@@ -1,6 +1,8 @@
 FROM debian:buster-slim
 
-LABEL author="zGumeloBr"
+LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
+
+ENV         DEBIAN_FRONTEND noninteractive
 
 RUN     apt update && apt upgrade -y \
 	&& apt install -y gcc g++ libgcc1 lib32gcc1 libc++-dev gdb libc6 git wget curl tar zip unzip binutils xz-utils liblzo2-2 cabextract iproute2 net-tools netcat telnet libatomic1 libsdl1.2debian libsdl2-2.0-0 \
@@ -12,7 +14,6 @@ RUN     apt update && apt upgrade -y \
 	
 USER        container
 ENV         USER=container HOME=/home/container
-ENV         DEBIAN_FRONTEND noninteractive
 
 WORKDIR     /home/container
 
