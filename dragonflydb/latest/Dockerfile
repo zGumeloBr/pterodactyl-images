@@ -2,6 +2,8 @@ FROM        ubuntu:22.04
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
 
+ENV         DEBIAN_FRONTEND noninteractive
+
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 RUN     apt update && apt upgrade -y \
@@ -13,7 +15,6 @@ RUN useradd -d /home/container -m container
 	
 USER        container
 ENV         USER=container HOME=/home/container
-ENV         DEBIAN_FRONTEND noninteractive
 
 WORKDIR     /home/container
 
