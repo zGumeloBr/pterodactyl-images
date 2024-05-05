@@ -1,4 +1,4 @@
-FROM        ghcr.io/graalvm/graalvm-community:21
+FROM        ghcr.io/graalvm/jdk-community:21-ol8
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
     
