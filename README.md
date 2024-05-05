@@ -2,12 +2,6 @@
 
 Repository focused on bringing the most diverse Dockerfiles compatible with the Pterodactyl panel.
 
-## DragonflyDB Versions
-
-| Version | Image |
-| ------ | ------ |
-| Latest | ```ghcr.io/zgumelobr/pterodactyl:dragonflydb``` | ✅
-
 ## Java Versions
 
 Listed below are all the java versions supported by the repository.
