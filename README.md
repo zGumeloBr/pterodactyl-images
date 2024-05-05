@@ -1,25 +1,47 @@
-# 🦖 | Pterodactyl Docker Images
+# 🪿| Pterodactyl Docker Images
 
-Repositorio possuindo as docker images necessárias para o programa da eggs do painel pterodactyl.
+Repository focused on bringing the most diverse Dockerfiles compatible with the Pterodactyl panel.
 
-# ☕️ | Java (Zulu)
+## DragonflyDB Versions
 
-Java 7: ```ghcr.io/zgumelobr/pterodactyl:java_7```
+| Version | Image |
+| ------ | ------ |
+| Latest | ```ghcr.io/zgumelobr/pterodactyl:dragonflydb``` | ✅
 
-Java 8: ```ghcr.io/zgumelobr/pterodactyl:java_8```
+## Java Versions
 
-Java 11: ```ghcr.io/zgumelobr/pterodactyl:java_11```
+Listed below are all the java versions supported by the repository.
 
-Java 15: ```ghcr.io/zgumelobr/pterodactyl:java_15```
+#### Zulu JDK
 
-Java 16: ```ghcr.io/zgumelobr/pterodactyl:java_16```
+| Version | Image |
+| ------ | ------ |
+| 8 | ```ghcr.io/zgumelobr/pterodactyl:java_8``` | ✅
+| 11 | ```ghcr.io/zgumelobr/pterodactyl:java_11``` | ✅
+| 15 | ```ghcr.io/zgumelobr/pterodactyl:java_15``` | ✅
+| 16 | ```ghcr.io/zgumelobr/pterodactyl:java_16``` | ✅
+| 17 | ```ghcr.io/zgumelobr/pterodactyl:java_17``` | ✅
+| 21 | ```ghcr.io/zgumelobr/pterodactyl:java_21``` | ✅
 
-Java 17: ```ghcr.io/zgumelobr/pterodactyl:java_17```
+#### GraalVM
 
-Java 18: ```ghcr.io/zgumelobr/pterodactyl:java_18```
+| Version | Image |
+| ------ | ------ |
+| 8 | ```ghcr.io/zgumelobr/pterodactyl:java_graalvm_8``` | ✅
+| 11 | ```ghcr.io/zgumelobr/pterodactyl:java_graalvm_11``` | ✅
+| 17 | ```ghcr.io/zgumelobr/pterodactyl:java_graalvm_17``` | ✅
+| 21 | ```ghcr.io/zgumelobr/pterodactyl:java_graalvm_21``` | ✅
 
-Java 21: ```ghcr.io/zgumelobr/pterodactyl:java_21```
+#### Binary
 
-# 📁 | Contact
+(Obs: Binary image focused to run Binary archives in pterodactyl) 
 
-```Discord: zGumeloBr#8726```
+| System | Image |
+| ------ | ------ |
+| Debian | ```ghcr.io/zgumelobr/pterodactyl:binary``` | ✅
+
+## 📁 | Contact
+
+Discord: ```zgumelobr```
+
+Telegram: ```@zGumeloBr```

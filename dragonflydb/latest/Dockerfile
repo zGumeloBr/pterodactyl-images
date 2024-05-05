@@ -1,17 +1,19 @@
-FROM        azul/zulu-openjdk-alpine:7
+FROM        docker.dragonflydb.io/dragonflydb/dragonfly
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
-
+    
 LABEL       org.opencontainers.image.source="https://github.com/zGumeloBr/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses=MIT
-
-RUN         apk add --update --no-cache curl ca-certificates openssl git tar sqlite fontconfig freetype tzdata iproute2 libstdc++ ttf-dejavu java-jna
-RUN         adduser -D -h /home/container container
- 
+    
+RUN         apt -y update && \
+            apt -y upgrade && \
+            apt -y install iproute2 && \
+            useradd -d /home/container -m container -s /bin/bash
+     
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
-
+    
 COPY        ./entrypoint.sh /entrypoint.sh
-
-CMD         ["/bin/ash", "/entrypoint.sh"]
+    
+CMD         ["/bin/bash", "/entrypoint.sh"]
