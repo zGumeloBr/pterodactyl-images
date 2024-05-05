@@ -8,8 +8,8 @@ RUN     apt update && apt upgrade -y \
 	&& apt install -y gcc g++ libgcc1 libc++-dev gdb libc6 git wget curl tar zip unzip binutils xz-utils liblzo2-2 cabextract iproute2 net-tools netcat telnet\
     	libfontconfig locales ffmpeg gnupg2 apt-transport-https software-properties-common ca-certificates tzdata gcc-multilib\
 	&& update-locale lang=en_US.UTF-8 \
-	&& dpkg-reconfigure --frontend noninteractive locales \
-	&& useradd -m -d /home/container -s /bin/bash container
+
+RUN useradd -d /home/container -m container
 	
 USER        container
 ENV         USER=container HOME=/home/container
