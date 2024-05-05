@@ -1,4 +1,4 @@
-FROM        ghcr.io/graalvm/graalvm-community:17-ol9
+FROM        ghcr.io/graalvm/graalvm-community:17
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
     
