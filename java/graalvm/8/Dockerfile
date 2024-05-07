@@ -1,4 +1,4 @@
-FROM        ghcr.io/graalvm/jdk:java8
+FROM        ghcr.io/graalvm/graalvm-ce:java8
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
     
