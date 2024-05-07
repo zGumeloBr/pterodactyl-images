@@ -12,7 +12,7 @@ on:
       
 jobs:
   push:
-    name: "pterodactyl:java_zulu_prime_${{ matrix.tag }}"
+    name: "pterodactyl:java_zulu-prime_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -36,4 +36,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/zgumelobr/pterodactyl:java_zulu_prime_${{ matrix.tag }}
+            ghcr.io/zgumelobr/pterodactyl:java_zulu-prime_${{ matrix.tag }}
