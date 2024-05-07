@@ -2,6 +2,8 @@ FROM        azul/prime:11
 
 LABEL       author="zGumeloBr" maintainer="yan.mf@outlook.com"
 
+ENV         DEBIAN_FRONTEND noninteractive
+
 LABEL       org.opencontainers.image.source="https://github.com/zGumeloBr/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
