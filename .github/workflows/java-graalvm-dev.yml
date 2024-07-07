@@ -12,7 +12,7 @@ on:
       
 jobs:
   push:
-    name: "pterodactyl:java_graalvm_${{ matrix.tag }}"
+    name: "pterodactyl:java_graalvm_${{ matrix.tag }}_dev"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -39,4 +39,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/zgumelobr/pterodactyl:java_graalvm_${{ matrix.tag }}
+            ghcr.io/zgumelobr/pterodactyl:java_graalvm_${{ matrix.tag }}_dev
