@@ -1,4 +1,4 @@
-name: build java-zulu-dev
+name: build java-zulu
 
 on:
   workflow_dispatch:
