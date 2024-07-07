@@ -12,7 +12,7 @@ on:
       
 jobs:
   push:
-    name: "pterodactyl:binary_${{ matrix.tag }}_dev"
+    name: "pterodactyl:binary_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -36,4 +36,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/zgumelobr/pterodactyl:binary_${{ matrix.tag }}_dev
+            ghcr.io/zgumelobr/pterodactyl:binary_${{ matrix.tag }}
