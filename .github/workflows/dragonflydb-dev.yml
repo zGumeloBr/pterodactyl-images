@@ -1,4 +1,4 @@
-name: build dragonflydb
+name: build dragonflydb-dev
 
 on:
   workflow_dispatch:

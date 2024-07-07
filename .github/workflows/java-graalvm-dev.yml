@@ -1,4 +1,4 @@
-name: build java-graalvm
+name: build java-graalvm-dev
 
 on:
   workflow_dispatch:

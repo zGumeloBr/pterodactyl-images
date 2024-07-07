@@ -1,4 +1,4 @@
-name: build binary
+name: build binary-dev
 
 on:
   workflow_dispatch:
